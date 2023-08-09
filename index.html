@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Website</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script defer src="fontawsome.js/brands.js"></script>
+  <script defer src="fontawsome.js/solid.js"></script>
+  <script defer src="fontawsome.js/fontawesome.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="content flex_space"></div>
+    <div class="logo"></div>
+    <img src="images/summer-holiday.jpg" style="width:75px" alt="" >
+  
+    <div class="navlinks">
+     <ul id="menulist">
+      <li ><a href="#home"></a>home</li>
+      <li ><a href="#about"></a>about</li>
+      <li ><a href="#rooms"></a>rooms</li>
+      <li ><a href="#pages"></a>pages</li>
+      <li ><a href="#news"></a>news</li>
+      <li ><a href="#contact"></a>contact</li>
+      <li ><i class="fa-solid fa-magnifying-glass"></i></li>
+      <li><button class="primary-btn">Book Now</button></li>
+     </ul>
+      <span class="fa-solid fa-bars"  onclick=" menutoogle()"> </span>
+   </div>
+ </header>
+
+
+  <script>
+
+    menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+  
+    function menutoogle() {
+      if(menulist.style.maxHeight === "0px"){
+          menulist.style.maxHeight = "100vh"
+      }else{
+          menulist.style.maxHeight = "0px";
+
+      
+      }
+  
+    }
+  </script>
+ 
+  <section class="home" id="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+         
+          <img src="images/DoubleRoomwithBalconyandSeaview.jpg" alt="">
+         
+          <div class="text">
+            <h1>spend your holiday</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/Balcony.jpg" alt="">
+         
+          <div class="text">
+            <h1>spend your holiday</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/bathroom.jpg" alt="">
+          <div class="text">
+            <h1>spend your holiday</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <img src="images/beachfront-pool.jpg" alt="">
+          <div class="text">
+            <h1>spend your holiday</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText:["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+<section class="book">
+  <div class="container flex_space">
+    <div class="text">
+     <h1><span>Book</span>your rooms</h1>
+    </div>
+   <div class="form">
+
+     <form class="grid">
+
+      <input type="date" placeholder="Arrival Date">
+      <input type="date" placeholder="Departure Date">
+      <input type="number" placeholder="Adults">
+      <input type="number" placeholder="Children">
+      <input type="submit" value="CHECK AVAILABILITY">
+
+     </form>
+   </div>
+ </div>
+
+</section>
+
+  <section class="about top" id="about">
+   <div class = "container flex">
+    <div class="left">
+      <div class="heading">
+        <h1>WELCOME</h1>
+        <h2>Holiday Hotel</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+      <button class="primary-btn">ABOUT US</button>
+    </div>
+    <div class="right">
+      <img src="images/hotel entrance.jpg" style="width: 380px;" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="counter top">
+  <div class ="container grid">
+    <div class ="box">
+      <h1>2500</h1>
+      <hr>
+      <span>Customer</span>
+    </div>
+    <div class ="box">
+      <h1>1250</h1>
+      <hr>
+      <span> Happy Customer</span>
+    </div>
+    <div class ="box">
+      <h1>150</h1>
+      <hr>
+      <span>Expert Technicians</span>
+    </div>
+    <div class ="box">
+      <h1>3550</h1>
+      <hr>
+      <span>Desktop Reaired</span>
+    </div>
+  </div>
+</section>
+
+<section class="rooms" id="rooms">
+  <div class="container top">
+    <div class="heading">
+      <h1> EXPLORE </h1>
+      <h2>Our Rooms </h2>
+      <p>At vero eos et accusam et justo duo dolores et ea rebum. </p>
+    </div>
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        
+        <div class="items">
+
+          <div class="image">
+            <img src="images/room1.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Suporior Rooms</h2>
+            <div class="rate flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <div class="button flex">
+              <button class="primary-btn">BOOK NOW</button>
+              <h3> 250€ <span><br>Per Night</span></h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="items">
+
+          <div class="image">
+            <img src="images/room 2.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Suporior Rooms</h2>
+            <div class="rate flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <div class="button flex">
+              <button class="primary-btn">BOOK NOW</button>
+              <h3> 250€ <span><br>Per Night</span></h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="items">
+
+          <div class="image">
+            <img src="images/room 3.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Suporior Rooms</h2>
+            <div class="rate flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <div class="button flex">
+              <button class="primary-btn">BOOK NOW</button>
+              <h3> 250€ <span><br>Per Night</span></h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="items">
+
+          <div class="image">
+            <img src="images/room 4.jpg" alt="">
+          </div>
+          <div class="text">
+            <h2>Suporior Rooms</h2>
+            <div class="rate flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+            <p>At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            <div class="button flex">
+              <button class="primary-btn">BOOK NOW</button>
+              <h3> 250€ <span><br>Per Night</span></h3>
+
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+ 
+$('.owl-carousel1').owlCarousel({
+  loop:true,
+  margin:40,
+  nav:true,
+  dots:false,
+  navText:["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+  responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:2,
+          margin: 10,
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+</script>
+<section class="gallery">
+   <div class="container top">
+ 
+       <div class="heading">
+          <h1>PHOTOS</h1>
+          <h2>Our Gallery</h2>
+           <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+   </div>
+
+      <div class="content mtop">
+         <div class="owl-carousel owl-carousel owl-theme">
+
+             <div class="items">
+               <div class="img">
+                 <img src="images/gallery1.jpg" alt="">
+               </div>
+             
+                <div class="overlay">
+                 <span class="fa fa-plus"></span>
+                 <h3>Photo titel Here</h3>
+                </div>
+             </div>
+
+            <div class="items">
+              <div class="img">
+                <img src="images/gallery2.jpg" alt="">
+              </div>
+            
+               <div class="overlay">
+                <span class="fa fa-plus"></span>
+                <h3>Photo titel Here</h3>
+               </div>
+            </div>
+            <div class="items">
+            <div class="img">
+              <img src="images/gallery3.jpg" alt="">
+            </div>
+          
+             <div class="overlay">
+              <span class="fa fa-plus"></span>
+              <h3>Photo titel Here</h3>
+             </div>
+            </div>
+          </div>
+
+        
+      </div>
+
+ 
+</section>
+
+<script>
+ 
+ $('.owl-carousel').owlCarousel({
+
+  loop: true,
+
+  margin: 0,
+  
+  nav: true,
+
+  dots: false,
+
+  autoplay:true,
+
+  autoplayTimeout:1000,
+
+  autoplayHoverpause : true,
+
+  navText:["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+  
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:4
+            
+        },
+        1000:{
+            items:6
+        }
+    }
+  })
+  </script>
+
+  <section class="services top" id="pages">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+        <p> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+      </div>
+    </div>
+
+    <div class="content flex-space">
+      <div class="left grid2">
+
+
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-utensils"></i> 
+            <h3> Delicious Food</h3>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-bicycle"></i>
+
+            <h3> Fitness</h3>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-champagne-glasses"></i>
+
+            <h3> Inhouse Resturant</h3>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-spa"></i>
+            <h3> Beauty Spa</h3>
+
+          </div>
+         </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel3 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+          <h3> Evie robertson</h3>
+          <label>Evie robertson</label>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+          <h3> Evie robertson</h3>
+          <label>Evie robertson</label>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+          <h3> Evie robertson</h3>
+          <label>Evie robertson</label>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <script>
+  $('.owl-carousel3').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    dots:true,
+   
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+            
+        },
+        1000:{
+            items:1
+        }
+    }
+  })
+  </script>
+
+  <section class="news top rooms" id="news">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our News</h2>
+        <p> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+      </div>
+
+    
+    <div class="Content flex">
+      <div class="left grid2">
+
+        <div class="items">
+          <div class="img">
+            <img src="images/news-hotel1.jpg" alt="">
+
+          </div>
+          <div class="text">
+            <h2>sed diam nonumy eirmod .</h2>
+            <div class="admin flex">
+              <i class="fa-solid fa-user"></i>
+              <label > admin </label>
+              <i class="fa-solid fa-heart"></i>
+              <label> 500 </label>
+              <i class="fa-solid fa-comments"></i>
+
+            </div>
+            <p> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/news-hotel.jpg" alt="">
+
+          </div>
+          <div class="text">
+            <h2>sed diam nonumy eirmod .</h2>
+            <div class="admin flex">
+              <i class="fa-solid fa-user"></i>
+              <label > admin </label>
+              <i class="fa-solid fa-heart"></i>
+              <label> 500 </label>
+              <i class="fa-solid fa-comments"></i>
+
+            </div>
+            <p> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="right">
+        <div class="box flex">
+          <div class="img">
+            <img src="images/news2.jpg" alt="">
+          </div>
+          <div class="stext">
+            <h2> consetetur sadipscing elitr</h2>
+            <p> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="box flex">
+          <div class="img">
+            <img src="images/news3.jpg" alt="">
+          </div>
+          <div class="stext">
+            <h2> consetetur sadipscing elitr</h2>
+            <p> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="box flex">
+          <div class="img">
+            <img src="images/news4.jpg" alt="">
+          </div>
+          <div class="stext">
+            <h2> consetetur sadipscing elitr</h2>
+            <p> no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="newsletter mtop ">
+
+    <div class="container flex_space">
+      <h1>Subscribe to our Newsletter</h1>
+      <input type="text" placeholder="Your Email">
+      <input type="text" value="Subscribe">
+
+
+    </div>
+
+  </section>
+
+  <footer id="Contact">
+   <div class="container grid">
+    <div class="box">
+
+      <img src="images/summer-holiday.jpg" style="width:75px" alt="" >
+      <p>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+      </div>
+    </div>
+    <div class="box">
+
+      <h2>Links</h2>
+      <ul>
+        <li> Company History </li>
+        <li.>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+      <i class="fa-solid fa-location-dot"></i>
+      <label> Braunsberger str. 455 ,40569 ,Düsseldorf</label>
+      <i class="fa-solid fa-phone"></i>
+      <label> o1333445566</label>
+      <i class="fa-solid fa-envelope"></i>
+      <label>info@llaa.com</label>
+    
+    </div>
+
+    </div>
+  </footer>
+  <div class="legal">
+    <p class="container"> copyright (c) 2023 copyright Holder all right reserved.</p>
+
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+</body>
+  </html>
+
